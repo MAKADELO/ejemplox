@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página oficial de la Universidad Manuela Beltrán. Ofrecemos programas académicos de calidad y formación integral.">
+    <title>Universidad Manuela Beltrán</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta property="og:title" content="Universidad Manuela Beltrán">
+    <meta property="og:description" content="Ofrecemos programas académicos de alta calidad y formación integral en diversas áreas.">
+    <meta property="og:image" content="URL de la imagen de la universidad">
+    <meta property="og:url" content="URL de la página">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="Escudo_Universidad_Manuela_Beltrán 2.png" alt="Escudo de la Universidad Manuela Beltrán">
+        </div>
+        <h1>Universidad Manuela Beltrán</h1>
+        <button id="menu-toggle">☰</button>
+        <nav id="menu-items">
+            <a href="#home">Inicio</a>
+            <a href="#about">Nosotros</a>
+            <a href="#programs">Programas</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+
+    <div id="home" class="container fade-in">
+        <h2>Bienvenidos a la UMB</h2>
+        <p>La Universidad Manuela Beltrán es una institución de educación superior dedicada a formar profesionales competentes y éticos, comprometidos con el desarrollo social y el conocimiento.</p>
+        <p>Nuestra misión es brindar una educación integral que fomente el pensamiento crítico y la innovación, formando líderes para el mundo del mañana.</p>
+    </div>
+
+    <div id="about" class="container fade-in">
+        <h2>Nosotros</h2>
+        <p>La UMB tiene una rica historia de excelencia académica y un fuerte compromiso con la investigación y el desarrollo social. Nuestros valores se centran en la integridad, el respeto y la responsabilidad.</p>
+        <p>Con un enfoque en la educación de alta calidad, la UMB ofrece un entorno de aprendizaje que promueve el crecimiento personal y profesional de sus estudiantes.</p>
+        
+        <!-- Diagrama de Patrones Arquitectónicos -->
+        <h3>Patrones Arquitectónicos</h3>
+        <img src="ESTILOS Y PATRONES.png" alt="Diagrama de Patrones Arquitectónicos">
+
+        <!-- Diagrama de Web Semántica -->
+        <h3>Web Semántica</h3>
+        <img src="WEB SISTEMATICA.png" alt="Diagrama de Web Semántica">
+    </div>
+
+    <div id="programs" class="container fade-in">
+        <h2>Programas</h2>
+        <p>Ofrecemos una amplia gama de programas académicos, incluyendo:</p>
+        <ul>
+            <li><strong>Ingeniería:</strong> Ingeniería de Sistemas, Ingeniería Electrónica, Ingeniería Industrial.</li>
+            <li><strong>Salud:</strong> Enfermería, Fisioterapia, Psicología.</li>
+            <li><strong>Administración:</strong> Administración de Empresas, Contaduría Pública.</li>
+            <li><strong>Ciencias Sociales:</strong> Derecho, Comunicación Social.</li>
+        </ul>
+        <p>Visita nuestra página de programas para conocer más sobre cada uno de ellos y encontrar el que mejor se adapte a tus intereses.</p>
+    </div>
+
+    <div id="contact" class="container fade-in">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta? Contáctanos a través de nuestras líneas de atención:</p>
+        <p><strong>Teléfono:</strong> +57 1 5551234</p>
+        <p><strong>Email:</strong> info@umb.edu.co</p>
+        <form id="contact-form" action="mailto:info@umb.edu.co" method="post" enctype="text/plain">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Mensaje:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+        <p>Síguenos en nuestras redes sociales para estar al día con las últimas noticias y eventos.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Universidad Manuela Beltrán. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

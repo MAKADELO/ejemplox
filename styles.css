@@ -1,0 +1,183 @@
+/* Estilos Globales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    text-align: center; /* Centramos el texto */
+}
+
+/* Encabezado */
+header {
+    background-color: #990000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header .logo-container {
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header img {
+    width: 120px;
+    height: auto;
+    display: block;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+/* Botón de menú y navegación */
+#menu-toggle {
+    display: none;
+    background-color: #cc0000;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #cc0000;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; /* Permite que el menú se ajuste a diferentes tamaños de pantalla */
+}
+
+nav a {
+    display: inline-block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #990000;
+}
+
+#menu-items {
+    display: flex;
+    gap: 10px;
+}
+
+/* Contenedor */
+.container {
+    padding: 20px;
+    margin: 20px auto; /* Centra el contenedor en la página */
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 1200px; /* Ajusta el tamaño máximo del contenedor */
+}
+
+/* Estilos para las imágenes de los diagramas */
+.container img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px auto; /* Centra las imágenes */
+    border: 2px solid #990000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el zoom */
+.container img.zoom {
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
+}
+
+/* Formulario de contacto */
+form {
+    margin-top: 20px;
+    text-align: left; /* Alinea el texto del formulario a la izquierda dentro del contenedor centrado */
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #990000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #cc0000;
+}
+
+/* Pie de página */
+footer {
+    background-color: #990000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Efecto de desvanecimiento */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+/* Menú de navegación responsive */
+@media (max-width: 768px) {
+    #menu-items {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #cc0000;
+        width: 200px;
+    }
+
+    #menu-items a {
+        padding: 15px;
+        border-bottom: 1px solid #fff;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+}
